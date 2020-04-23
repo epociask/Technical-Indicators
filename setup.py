@@ -9,7 +9,7 @@ ext_modules = [Extension("indicators", ["src/indicators.pyx"])]
 cmdclass.update({'build_ext': build_ext})
 
 setuptools.setup(
-    name="epociask", # Replace with your own username
+    name="Indicators", 
     version="0.1.0",
     author="Ethen Pociask",
     author_email="epociask@volatrade.com",
