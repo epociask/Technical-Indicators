@@ -29,8 +29,9 @@ python3 setup.py install --user
 ```python
 
 import indicators
+import numpy as np 
 
-closes = [12.3, 11.5, 23.5, 24.2, 32.4]
+closes = np.array([12.3, 11.5, 23.5, 24.2, 32.4])
 
 print(indicators.SMA(closes, 4))
 ```
