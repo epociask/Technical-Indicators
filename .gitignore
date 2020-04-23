@@ -2,3 +2,4 @@
 /build/*
 /cython_indicators.egg-info/*
 /dist/*
+/src/indicators.egg-info/*
