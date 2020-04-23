@@ -9,8 +9,8 @@ ext_modules = [Extension("indicators", ["src/indicators.pyx"])]
 cmdclass.update({'build_ext': build_ext})
 
 setuptools.setup(
-    name="Indicators", 
-    version="0.1.0",
+    name="cython_indicators", 
+    version="0.0.1",
     author="Ethen Pociask",
     author_email="epociask@volatrade.com",
     description="Indicator functions using cython",
