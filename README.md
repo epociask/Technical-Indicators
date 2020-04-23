@@ -3,27 +3,21 @@
 Still in infancy will require a good amount of work
 Currently only provide support for SMA, Upper Fibonnaci Retracement Levels, && Bollinger Bands (Many to come and many to be ported over from original python)
 
-## To Intall/Run (For Now)
+## To Install (For Now)
 
 ### Add to python envrionment (PIP) 
-1. 
 ``` 
   pip3 install -i https://test.pypi.org/simple/ epociask==0.0.1
 ```
 
 ### Add to python envrionment (Manual)
-1.
 ``` 
-git clone https://github.com/epociask/cython_indicator_functions.git
+git clone https://github.com/epociask/cython_indicator_functions.git 
+
+python3 setup.py build 
+
+python3 setup.py install --user 
 ```
-2. 
-``` 
-  python3 setup.py build 
-``` 
-3. 
-``` 
-  python3 setup.py install --user 
-  ```
 
 
 ## To Run (For Now)
