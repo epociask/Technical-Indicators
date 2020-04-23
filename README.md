@@ -6,18 +6,22 @@ Currently only provide support for SMA, Upper Fibonnaci Retracement Levels, && B
 ## To Intall/Run (For Now)
 
 ### Add to python envrionment (PIP) 
-1. ``` 
+1. 
+``` 
   pip3 install -i https://test.pypi.org/simple/ epociask==0.0.1
 ```
 
 ### Add to python envrionment (Manual)
-1. ``` 
+1.
+``` 
 git clone https://github.com/epociask/cython_indicator_functions.git
 ```
-2. ``` 
+2. 
+``` 
   python3 setup.py build 
 ``` 
-3. ``` 
+3. 
+``` 
   python3 setup.py install --user 
   ```
 
