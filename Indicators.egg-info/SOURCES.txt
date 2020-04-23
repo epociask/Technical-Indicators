@@ -1,7 +1,0 @@
-README.md
-setup.py
-Indicators.egg-info/PKG-INFO
-Indicators.egg-info/SOURCES.txt
-Indicators.egg-info/dependency_links.txt
-Indicators.egg-info/top_level.txt
-src/indicators.pyx
