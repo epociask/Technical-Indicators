@@ -1,0 +1,4 @@
+/Indicators.egg-info/*
+/build/*
+/cython_indicators.egg-info/*
+/dist/*
