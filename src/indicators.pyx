@@ -59,7 +59,9 @@ cpdef BOLINGER_BANDES(double[:] closes, int period):
         return (sma), (sma + sdv*2), (sma - sdv*2)
 
 
-        
+cpdef MOMENTUM(double [:] closes, int period):
+        cdef length = closes.shape[0]
+        return closes[length] - closes[length-period]        
         
 # cpdef EMA(np.array closes, int period):
 # 	cdef int length = closes.shape[0]

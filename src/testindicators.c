@@ -3,12 +3,12 @@
 /* BEGIN: Cython Metadata
 {
     "distutils": {
-        "name": "test",
+        "name": "testindicators",
         "sources": [
-            "indicators.pyx"
+            "testindicators.pyx"
         ]
     },
-    "module_name": "test"
+    "module_name": "testindicators"
 }
 END: Cython Metadata */
 
@@ -604,8 +604,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__test
-#define __PYX_HAVE_API__test
+#define __PYX_HAVE__testindicators
+#define __PYX_HAVE_API__testindicators
 /* Early includes */
 #include "pythread.h"
 #include <string.h>
@@ -820,7 +820,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "indicators.pyx",
+  "testindicators.pyx",
   "stringsource",
 };
 /* MemviewSliceStruct.proto */
@@ -937,16 +937,16 @@ struct __pyx_array_obj;
 struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
-struct __pyx_opt_args_4test_UPTREND;
+struct __pyx_opt_args_14testindicators_UPTREND;
 
-/* "indicators.pyx":11
+/* "testindicators.pyx":11
  *         return float(total/period)
  * 
  * cpdef UPTREND(candles, n=3):             # <<<<<<<<<<<<<<
  *         cdef int positives = 0
  *         if candles[len(candles)-n]['close'] <  candles[-1]['close']:
  */
-struct __pyx_opt_args_4test_UPTREND {
+struct __pyx_opt_args_14testindicators_UPTREND {
   int __pyx_n;
   PyObject *n;
 };
@@ -1728,7 +1728,7 @@ static PyObject *__pyx_memoryview_assign_item_from_object(struct __pyx_memoryvie
 static PyObject *__pyx_memoryviewslice_convert_item_to_object(struct __pyx_memoryviewslice_obj *__pyx_v_self, char *__pyx_v_itemp); /* proto*/
 static PyObject *__pyx_memoryviewslice_assign_item_from_object(struct __pyx_memoryviewslice_obj *__pyx_v_self, char *__pyx_v_itemp, PyObject *__pyx_v_value); /* proto*/
 
-/* Module declarations from 'test' */
+/* Module declarations from 'testindicators' */
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
@@ -1740,12 +1740,12 @@ static PyObject *contiguous = 0;
 static PyObject *indirect_contiguous = 0;
 static int __pyx_memoryview_thread_locks_used;
 static PyThread_type_lock __pyx_memoryview_thread_locks[8];
-static PyObject *__pyx_f_4test_SMA(__Pyx_memviewslice, int, int __pyx_skip_dispatch); /*proto*/
-static PyObject *__pyx_f_4test_UPTREND(PyObject *, int __pyx_skip_dispatch, struct __pyx_opt_args_4test_UPTREND *__pyx_optional_args); /*proto*/
-static PyObject *__pyx_f_4test_SDV(__Pyx_memviewslice, PyObject *); /*proto*/
-static PyObject *__pyx_f_4test_FIB(PyObject *, int, int __pyx_skip_dispatch); /*proto*/
-static PyObject *__pyx_f_4test_BOLINGER_BANDES(__Pyx_memviewslice, int, int __pyx_skip_dispatch); /*proto*/
-static PyObject *__pyx_f_4test_MOMENTUM(__Pyx_memviewslice, int, int __pyx_skip_dispatch); /*proto*/
+static PyObject *__pyx_f_14testindicators_SMA(__Pyx_memviewslice, int, int __pyx_skip_dispatch); /*proto*/
+static PyObject *__pyx_f_14testindicators_UPTREND(PyObject *, int __pyx_skip_dispatch, struct __pyx_opt_args_14testindicators_UPTREND *__pyx_optional_args); /*proto*/
+static PyObject *__pyx_f_14testindicators_SDV(__Pyx_memviewslice, PyObject *); /*proto*/
+static PyObject *__pyx_f_14testindicators_FIB(PyObject *, int, int __pyx_skip_dispatch); /*proto*/
+static PyObject *__pyx_f_14testindicators_BOLINGER_BANDES(__Pyx_memviewslice, int, int __pyx_skip_dispatch); /*proto*/
+static PyObject *__pyx_f_14testindicators_MOMENTUM(__Pyx_memviewslice, int, int __pyx_skip_dispatch); /*proto*/
 static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, char *, char *); /*proto*/
 static void *__pyx_align_pointer(void *, size_t); /*proto*/
 static PyObject *__pyx_memoryview_new(PyObject *, int, int, __Pyx_TypeInfo *); /*proto*/
@@ -1780,11 +1780,11 @@ static void __pyx_memoryview_slice_assign_scalar(__Pyx_memviewslice *, int, size
 static void __pyx_memoryview__slice_assign_scalar(char *, Py_ssize_t *, Py_ssize_t *, int, size_t, void *); /*proto*/
 static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, PyObject *); /*proto*/
 static __Pyx_TypeInfo __Pyx_TypeInfo_double = { "double", NULL, sizeof(double), { 0 }, 0, 'R', 0, 0 };
-#define __Pyx_MODULE_NAME "test"
-extern int __pyx_module_is_main_test;
-int __pyx_module_is_main_test = 0;
+#define __Pyx_MODULE_NAME "testindicators"
+extern int __pyx_module_is_main_testindicators;
+int __pyx_module_is_main_testindicators = 0;
 
-/* Implementation of 'test' */
+/* Implementation of 'testindicators' */
 static PyObject *__pyx_builtin_xrange;
 static PyObject *__pyx_builtin_ValueError;
 static PyObject *__pyx_builtin_MemoryError;
@@ -1980,11 +1980,11 @@ static PyObject *__pyx_kp_s_unable_to_allocate_shape_and_str;
 static PyObject *__pyx_n_s_unpack;
 static PyObject *__pyx_n_s_update;
 static PyObject *__pyx_n_s_xrange;
-static PyObject *__pyx_pf_4test_SMA(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_closes, int __pyx_v_period); /* proto */
-static PyObject *__pyx_pf_4test_2UPTREND(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_candles, PyObject *__pyx_v_n); /* proto */
-static PyObject *__pyx_pf_4test_4FIB(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_candles, int __pyx_v_period); /* proto */
-static PyObject *__pyx_pf_4test_6BOLINGER_BANDES(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_closes, int __pyx_v_period); /* proto */
-static PyObject *__pyx_pf_4test_8MOMENTUM(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_closes, int __pyx_v_period); /* proto */
+static PyObject *__pyx_pf_14testindicators_SMA(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_closes, int __pyx_v_period); /* proto */
+static PyObject *__pyx_pf_14testindicators_2UPTREND(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_candles, PyObject *__pyx_v_n); /* proto */
+static PyObject *__pyx_pf_14testindicators_4FIB(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_candles, int __pyx_v_period); /* proto */
+static PyObject *__pyx_pf_14testindicators_6BOLINGER_BANDES(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_closes, int __pyx_v_period); /* proto */
+static PyObject *__pyx_pf_14testindicators_8MOMENTUM(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_closes, int __pyx_v_period); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__(struct __pyx_array_obj *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(struct __pyx_array_obj *__pyx_v_self); /* proto */
@@ -2063,7 +2063,7 @@ static PyObject *__pyx_tuple__24;
 static PyObject *__pyx_codeobj__25;
 /* Late includes */
 
-/* "indicators.pyx":3
+/* "testindicators.pyx":3
  * import numpy as np
  * 
  * cpdef SMA(double[:] closes, int period):             # <<<<<<<<<<<<<<
@@ -2071,8 +2071,8 @@ static PyObject *__pyx_codeobj__25;
  *         cdef float total = closes[length-period]
  */
 
-static PyObject *__pyx_pw_4test_1SMA(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_f_4test_SMA(__Pyx_memviewslice __pyx_v_closes, int __pyx_v_period, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static PyObject *__pyx_pw_14testindicators_1SMA(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_f_14testindicators_SMA(__Pyx_memviewslice __pyx_v_closes, int __pyx_v_period, CYTHON_UNUSED int __pyx_skip_dispatch) {
   int __pyx_v_length;
   float __pyx_v_total;
   int __pyx_v_i;
@@ -2088,7 +2088,7 @@ static PyObject *__pyx_f_4test_SMA(__Pyx_memviewslice __pyx_v_closes, int __pyx_
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("SMA", 0);
 
-  /* "indicators.pyx":4
+  /* "testindicators.pyx":4
  * 
  * cpdef SMA(double[:] closes, int period):
  *         cdef int length = len(closes)             # <<<<<<<<<<<<<<
@@ -2098,7 +2098,7 @@ static PyObject *__pyx_f_4test_SMA(__Pyx_memviewslice __pyx_v_closes, int __pyx_
   __pyx_t_1 = __Pyx_MemoryView_Len(__pyx_v_closes); 
   __pyx_v_length = __pyx_t_1;
 
-  /* "indicators.pyx":5
+  /* "testindicators.pyx":5
  * cpdef SMA(double[:] closes, int period):
  *         cdef int length = len(closes)
  *         cdef float total = closes[length-period]             # <<<<<<<<<<<<<<
@@ -2117,7 +2117,7 @@ static PyObject *__pyx_f_4test_SMA(__Pyx_memviewslice __pyx_v_closes, int __pyx_
   }
   __pyx_v_total = (*((double *) ( /* dim=0 */ (__pyx_v_closes.data + __pyx_t_2 * __pyx_v_closes.strides[0]) )));
 
-  /* "indicators.pyx":7
+  /* "testindicators.pyx":7
  *         cdef float total = closes[length-period]
  *         cdef int i
  *         for i in xrange((length-period)+1, length):             # <<<<<<<<<<<<<<
@@ -2129,7 +2129,7 @@ static PyObject *__pyx_f_4test_SMA(__Pyx_memviewslice __pyx_v_closes, int __pyx_
   for (__pyx_t_5 = ((__pyx_v_length - __pyx_v_period) + 1); __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_i = __pyx_t_5;
 
-    /* "indicators.pyx":8
+    /* "testindicators.pyx":8
  *         cdef int i
  *         for i in xrange((length-period)+1, length):
  *                 total += closes[i]             # <<<<<<<<<<<<<<
@@ -2149,7 +2149,7 @@ static PyObject *__pyx_f_4test_SMA(__Pyx_memviewslice __pyx_v_closes, int __pyx_
     __pyx_v_total = (__pyx_v_total + (*((double *) ( /* dim=0 */ (__pyx_v_closes.data + __pyx_t_6 * __pyx_v_closes.strides[0]) ))));
   }
 
-  /* "indicators.pyx":9
+  /* "testindicators.pyx":9
  *         for i in xrange((length-period)+1, length):
  *                 total += closes[i]
  *         return float(total/period)             # <<<<<<<<<<<<<<
@@ -2167,7 +2167,7 @@ static PyObject *__pyx_f_4test_SMA(__Pyx_memviewslice __pyx_v_closes, int __pyx_
   __pyx_t_8 = 0;
   goto __pyx_L0;
 
-  /* "indicators.pyx":3
+  /* "testindicators.pyx":3
  * import numpy as np
  * 
  * cpdef SMA(double[:] closes, int period):             # <<<<<<<<<<<<<<
@@ -2178,7 +2178,7 @@ static PyObject *__pyx_f_4test_SMA(__Pyx_memviewslice __pyx_v_closes, int __pyx_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("test.SMA", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.SMA", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2187,8 +2187,8 @@ static PyObject *__pyx_f_4test_SMA(__Pyx_memviewslice __pyx_v_closes, int __pyx_
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4test_1SMA(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_4test_1SMA(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_14testindicators_1SMA(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_14testindicators_1SMA(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_closes = { 0, 0, { 0 }, { 0 }, { 0 } };
   int __pyx_v_period;
   PyObject *__pyx_r = 0;
@@ -2236,25 +2236,25 @@ static PyObject *__pyx_pw_4test_1SMA(PyObject *__pyx_self, PyObject *__pyx_args,
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("SMA", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 3, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("test.SMA", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.SMA", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4test_SMA(__pyx_self, __pyx_v_closes, __pyx_v_period);
+  __pyx_r = __pyx_pf_14testindicators_SMA(__pyx_self, __pyx_v_closes, __pyx_v_period);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4test_SMA(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_closes, int __pyx_v_period) {
+static PyObject *__pyx_pf_14testindicators_SMA(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_closes, int __pyx_v_period) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("SMA", 0);
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_v_closes.memview)) { __Pyx_RaiseUnboundLocalError("closes"); __PYX_ERR(0, 3, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_f_4test_SMA(__pyx_v_closes, __pyx_v_period, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_14testindicators_SMA(__pyx_v_closes, __pyx_v_period, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -2263,7 +2263,7 @@ static PyObject *__pyx_pf_4test_SMA(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_me
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("test.SMA", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.SMA", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_closes, 1);
@@ -2272,7 +2272,7 @@ static PyObject *__pyx_pf_4test_SMA(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_me
   return __pyx_r;
 }
 
-/* "indicators.pyx":11
+/* "testindicators.pyx":11
  *         return float(total/period)
  * 
  * cpdef UPTREND(candles, n=3):             # <<<<<<<<<<<<<<
@@ -2280,8 +2280,8 @@ static PyObject *__pyx_pf_4test_SMA(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_me
  *         if candles[len(candles)-n]['close'] <  candles[-1]['close']:
  */
 
-static PyObject *__pyx_pw_4test_3UPTREND(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_f_4test_UPTREND(PyObject *__pyx_v_candles, CYTHON_UNUSED int __pyx_skip_dispatch, struct __pyx_opt_args_4test_UPTREND *__pyx_optional_args) {
+static PyObject *__pyx_pw_14testindicators_3UPTREND(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_f_14testindicators_UPTREND(PyObject *__pyx_v_candles, CYTHON_UNUSED int __pyx_skip_dispatch, struct __pyx_opt_args_14testindicators_UPTREND *__pyx_optional_args) {
   PyObject *__pyx_v_n = ((PyObject *)__pyx_int_3);
   CYTHON_UNUSED int __pyx_v_positives;
   PyObject *__pyx_r = NULL;
@@ -2298,7 +2298,7 @@ static PyObject *__pyx_f_4test_UPTREND(PyObject *__pyx_v_candles, CYTHON_UNUSED 
     }
   }
 
-  /* "indicators.pyx":12
+  /* "testindicators.pyx":12
  * 
  * cpdef UPTREND(candles, n=3):
  *         cdef int positives = 0             # <<<<<<<<<<<<<<
@@ -2307,7 +2307,7 @@ static PyObject *__pyx_f_4test_UPTREND(PyObject *__pyx_v_candles, CYTHON_UNUSED 
  */
   __pyx_v_positives = 0;
 
-  /* "indicators.pyx":13
+  /* "testindicators.pyx":13
  * cpdef UPTREND(candles, n=3):
  *         cdef int positives = 0
  *         if candles[len(candles)-n]['close'] <  candles[-1]['close']:             # <<<<<<<<<<<<<<
@@ -2338,7 +2338,7 @@ static PyObject *__pyx_f_4test_UPTREND(PyObject *__pyx_v_candles, CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_5) {
 
-    /* "indicators.pyx":20
+    /* "testindicators.pyx":20
  * 
  *                 # if positives/2 > n:
  *                 return True             # <<<<<<<<<<<<<<
@@ -2350,7 +2350,7 @@ static PyObject *__pyx_f_4test_UPTREND(PyObject *__pyx_v_candles, CYTHON_UNUSED 
     __pyx_r = Py_True;
     goto __pyx_L0;
 
-    /* "indicators.pyx":13
+    /* "testindicators.pyx":13
  * cpdef UPTREND(candles, n=3):
  *         cdef int positives = 0
  *         if candles[len(candles)-n]['close'] <  candles[-1]['close']:             # <<<<<<<<<<<<<<
@@ -2359,7 +2359,7 @@ static PyObject *__pyx_f_4test_UPTREND(PyObject *__pyx_v_candles, CYTHON_UNUSED 
  */
   }
 
-  /* "indicators.pyx":22
+  /* "testindicators.pyx":22
  *                 return True
  * 
  *         return False             # <<<<<<<<<<<<<<
@@ -2371,7 +2371,7 @@ static PyObject *__pyx_f_4test_UPTREND(PyObject *__pyx_v_candles, CYTHON_UNUSED 
   __pyx_r = Py_False;
   goto __pyx_L0;
 
-  /* "indicators.pyx":11
+  /* "testindicators.pyx":11
  *         return float(total/period)
  * 
  * cpdef UPTREND(candles, n=3):             # <<<<<<<<<<<<<<
@@ -2384,7 +2384,7 @@ static PyObject *__pyx_f_4test_UPTREND(PyObject *__pyx_v_candles, CYTHON_UNUSED 
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("test.UPTREND", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.UPTREND", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2393,8 +2393,8 @@ static PyObject *__pyx_f_4test_UPTREND(PyObject *__pyx_v_candles, CYTHON_UNUSED 
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4test_3UPTREND(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_4test_3UPTREND(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_14testindicators_3UPTREND(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_14testindicators_3UPTREND(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_candles = 0;
   PyObject *__pyx_v_n = 0;
   PyObject *__pyx_r = 0;
@@ -2446,27 +2446,27 @@ static PyObject *__pyx_pw_4test_3UPTREND(PyObject *__pyx_self, PyObject *__pyx_a
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("UPTREND", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 11, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("test.UPTREND", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.UPTREND", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4test_2UPTREND(__pyx_self, __pyx_v_candles, __pyx_v_n);
+  __pyx_r = __pyx_pf_14testindicators_2UPTREND(__pyx_self, __pyx_v_candles, __pyx_v_n);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4test_2UPTREND(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_candles, PyObject *__pyx_v_n) {
+static PyObject *__pyx_pf_14testindicators_2UPTREND(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_candles, PyObject *__pyx_v_n) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
-  struct __pyx_opt_args_4test_UPTREND __pyx_t_2;
+  struct __pyx_opt_args_14testindicators_UPTREND __pyx_t_2;
   __Pyx_RefNannySetupContext("UPTREND", 0);
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2.__pyx_n = 1;
   __pyx_t_2.n = __pyx_v_n;
-  __pyx_t_1 = __pyx_f_4test_UPTREND(__pyx_v_candles, 0, &__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_14testindicators_UPTREND(__pyx_v_candles, 0, &__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -2475,7 +2475,7 @@ static PyObject *__pyx_pf_4test_2UPTREND(CYTHON_UNUSED PyObject *__pyx_self, PyO
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("test.UPTREND", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.UPTREND", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2483,7 +2483,7 @@ static PyObject *__pyx_pf_4test_2UPTREND(CYTHON_UNUSED PyObject *__pyx_self, PyO
   return __pyx_r;
 }
 
-/* "indicators.pyx":26
+/* "testindicators.pyx":26
  * 
  * 
  * cdef SDV(double[:] closes, period):             # <<<<<<<<<<<<<<
@@ -2491,7 +2491,7 @@ static PyObject *__pyx_pf_4test_2UPTREND(CYTHON_UNUSED PyObject *__pyx_self, PyO
  *         cdef float mean = SMA(closes, period)
  */
 
-static PyObject *__pyx_f_4test_SDV(__Pyx_memviewslice __pyx_v_closes, PyObject *__pyx_v_period) {
+static PyObject *__pyx_f_14testindicators_SDV(__Pyx_memviewslice __pyx_v_closes, PyObject *__pyx_v_period) {
   PyObject *__pyx_v_length = 0;
   float __pyx_v_mean;
   float __pyx_v_x_i;
@@ -2511,7 +2511,7 @@ static PyObject *__pyx_f_4test_SDV(__Pyx_memviewslice __pyx_v_closes, PyObject *
   PyObject *__pyx_t_11 = NULL;
   __Pyx_RefNannySetupContext("SDV", 0);
 
-  /* "indicators.pyx":27
+  /* "testindicators.pyx":27
  * 
  * cdef SDV(double[:] closes, period):
  *         cdef length = len(closes)             # <<<<<<<<<<<<<<
@@ -2524,7 +2524,7 @@ static PyObject *__pyx_f_4test_SDV(__Pyx_memviewslice __pyx_v_closes, PyObject *
   __pyx_v_length = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "indicators.pyx":28
+  /* "testindicators.pyx":28
  * cdef SDV(double[:] closes, period):
  *         cdef length = len(closes)
  *         cdef float mean = SMA(closes, period)             # <<<<<<<<<<<<<<
@@ -2532,13 +2532,13 @@ static PyObject *__pyx_f_4test_SDV(__Pyx_memviewslice __pyx_v_closes, PyObject *
  *         cdef int i
  */
   __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_v_period); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 28, __pyx_L1_error)
-  __pyx_t_2 = __pyx_f_4test_SMA(__pyx_v_closes, __pyx_t_3, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_14testindicators_SMA(__pyx_v_closes, __pyx_t_3, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = __pyx_PyFloat_AsFloat(__pyx_t_2); if (unlikely((__pyx_t_4 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_mean = __pyx_t_4;
 
-  /* "indicators.pyx":29
+  /* "testindicators.pyx":29
  *         cdef length = len(closes)
  *         cdef float mean = SMA(closes, period)
  *         cdef float x_i = 0.0             # <<<<<<<<<<<<<<
@@ -2547,7 +2547,7 @@ static PyObject *__pyx_f_4test_SDV(__Pyx_memviewslice __pyx_v_closes, PyObject *
  */
   __pyx_v_x_i = 0.0;
 
-  /* "indicators.pyx":31
+  /* "testindicators.pyx":31
  *         cdef float x_i = 0.0
  *         cdef int i
  *         for i in xrange((length - period), length):             # <<<<<<<<<<<<<<
@@ -2563,7 +2563,7 @@ static PyObject *__pyx_f_4test_SDV(__Pyx_memviewslice __pyx_v_closes, PyObject *
   for (__pyx_t_3 = __pyx_t_6; __pyx_t_3 < __pyx_t_7; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "indicators.pyx":32
+    /* "testindicators.pyx":32
  *         cdef int i
  *         for i in xrange((length - period), length):
  *                 x_i += (closes[i] - mean) ** 2             # <<<<<<<<<<<<<<
@@ -2583,7 +2583,7 @@ static PyObject *__pyx_f_4test_SDV(__Pyx_memviewslice __pyx_v_closes, PyObject *
     __pyx_v_x_i = (__pyx_v_x_i + pow(((*((double *) ( /* dim=0 */ (__pyx_v_closes.data + __pyx_t_8 * __pyx_v_closes.strides[0]) ))) - __pyx_v_mean), 2.0));
   }
 
-  /* "indicators.pyx":33
+  /* "testindicators.pyx":33
  *         for i in xrange((length - period), length):
  *                 x_i += (closes[i] - mean) ** 2
  *         return (x_i/(period-1))             # <<<<<<<<<<<<<<
@@ -2603,7 +2603,7 @@ static PyObject *__pyx_f_4test_SDV(__Pyx_memviewslice __pyx_v_closes, PyObject *
   __pyx_t_11 = 0;
   goto __pyx_L0;
 
-  /* "indicators.pyx":26
+  /* "testindicators.pyx":26
  * 
  * 
  * cdef SDV(double[:] closes, period):             # <<<<<<<<<<<<<<
@@ -2616,7 +2616,7 @@ static PyObject *__pyx_f_4test_SDV(__Pyx_memviewslice __pyx_v_closes, PyObject *
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_11);
-  __Pyx_AddTraceback("test.SDV", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.SDV", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_length);
@@ -2625,7 +2625,7 @@ static PyObject *__pyx_f_4test_SDV(__Pyx_memviewslice __pyx_v_closes, PyObject *
   return __pyx_r;
 }
 
-/* "indicators.pyx":36
+/* "testindicators.pyx":36
  * 
  * 
  * cpdef FIB(list candles, int period):             # <<<<<<<<<<<<<<
@@ -2633,8 +2633,8 @@ static PyObject *__pyx_f_4test_SDV(__Pyx_memviewslice __pyx_v_closes, PyObject *
  *         cdef float high = 0
  */
 
-static PyObject *__pyx_pw_4test_5FIB(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static PyObject *__pyx_pw_14testindicators_5FIB(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_f_14testindicators_FIB(PyObject *__pyx_v_candles, int __pyx_v_period, CYTHON_UNUSED int __pyx_skip_dispatch) {
   float __pyx_v_low;
   float __pyx_v_high;
   float __pyx_v_diff;
@@ -2655,7 +2655,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
   PyObject *__pyx_t_11 = NULL;
   __Pyx_RefNannySetupContext("FIB", 0);
 
-  /* "indicators.pyx":37
+  /* "testindicators.pyx":37
  * 
  * cpdef FIB(list candles, int period):
  *         cdef float low = 100000             # <<<<<<<<<<<<<<
@@ -2664,7 +2664,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
  */
   __pyx_v_low = 100000.0;
 
-  /* "indicators.pyx":38
+  /* "testindicators.pyx":38
  * cpdef FIB(list candles, int period):
  *         cdef float low = 100000
  *         cdef float high = 0             # <<<<<<<<<<<<<<
@@ -2673,7 +2673,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
  */
   __pyx_v_high = 0.0;
 
-  /* "indicators.pyx":41
+  /* "testindicators.pyx":41
  *         cdef float diff
  *         cdef int i
  *         cdef int length = len(candles)             # <<<<<<<<<<<<<<
@@ -2687,7 +2687,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
   __pyx_t_1 = PyList_GET_SIZE(__pyx_v_candles); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 41, __pyx_L1_error)
   __pyx_v_length = __pyx_t_1;
 
-  /* "indicators.pyx":42
+  /* "testindicators.pyx":42
  *         cdef int i
  *         cdef int length = len(candles)
  *         for i in xrange(length - period, length):             # <<<<<<<<<<<<<<
@@ -2699,7 +2699,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
   for (__pyx_t_4 = (__pyx_v_length - __pyx_v_period); __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
     __pyx_v_i = __pyx_t_4;
 
-    /* "indicators.pyx":43
+    /* "testindicators.pyx":43
  *         cdef int length = len(candles)
  *         for i in xrange(length - period, length):
  *                 if float(candles[i]['close']) < low and float(candles[i]['close'] > 1):             # <<<<<<<<<<<<<<
@@ -2741,7 +2741,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
     __pyx_L6_bool_binop_done:;
     if (__pyx_t_5) {
 
-      /* "indicators.pyx":44
+      /* "testindicators.pyx":44
  *         for i in xrange(length - period, length):
  *                 if float(candles[i]['close']) < low and float(candles[i]['close'] > 1):
  *                         low = float(candles[i]['close'])             # <<<<<<<<<<<<<<
@@ -2761,7 +2761,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_v_low = __pyx_t_8;
 
-      /* "indicators.pyx":43
+      /* "testindicators.pyx":43
  *         cdef int length = len(candles)
  *         for i in xrange(length - period, length):
  *                 if float(candles[i]['close']) < low and float(candles[i]['close'] > 1):             # <<<<<<<<<<<<<<
@@ -2770,7 +2770,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
  */
     }
 
-    /* "indicators.pyx":45
+    /* "testindicators.pyx":45
  *                 if float(candles[i]['close']) < low and float(candles[i]['close'] > 1):
  *                         low = float(candles[i]['close'])
  *                 if float(candles[i]['close']) > high:             # <<<<<<<<<<<<<<
@@ -2791,7 +2791,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
     __pyx_t_5 = ((__pyx_t_8 > __pyx_v_high) != 0);
     if (__pyx_t_5) {
 
-      /* "indicators.pyx":46
+      /* "testindicators.pyx":46
  *                         low = float(candles[i]['close'])
  *                 if float(candles[i]['close']) > high:
  *                         high = float(candles[i]['close'])             # <<<<<<<<<<<<<<
@@ -2811,7 +2811,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_v_high = __pyx_t_8;
 
-      /* "indicators.pyx":45
+      /* "testindicators.pyx":45
  *                 if float(candles[i]['close']) < low and float(candles[i]['close'] > 1):
  *                         low = float(candles[i]['close'])
  *                 if float(candles[i]['close']) > high:             # <<<<<<<<<<<<<<
@@ -2821,7 +2821,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
     }
   }
 
-  /* "indicators.pyx":48
+  /* "testindicators.pyx":48
  *                         high = float(candles[i]['close'])
  * 
  *         diff = high - low             # <<<<<<<<<<<<<<
@@ -2830,7 +2830,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
  */
   __pyx_v_diff = (__pyx_v_high - __pyx_v_low);
 
-  /* "indicators.pyx":49
+  /* "testindicators.pyx":49
  * 
  *         diff = high - low
  *         return (high - (0.236 * diff)), (high - (0.382 * diff)), (high - (0.618 * diff))             # <<<<<<<<<<<<<<
@@ -2859,7 +2859,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
   __pyx_t_11 = 0;
   goto __pyx_L0;
 
-  /* "indicators.pyx":36
+  /* "testindicators.pyx":36
  * 
  * 
  * cpdef FIB(list candles, int period):             # <<<<<<<<<<<<<<
@@ -2873,7 +2873,7 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_11);
-  __Pyx_AddTraceback("test.FIB", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.FIB", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2882,8 +2882,8 @@ static PyObject *__pyx_f_4test_FIB(PyObject *__pyx_v_candles, int __pyx_v_period
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4test_5FIB(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_4test_5FIB(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_14testindicators_5FIB(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_14testindicators_5FIB(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_candles = 0;
   int __pyx_v_period;
   PyObject *__pyx_r = 0;
@@ -2931,12 +2931,12 @@ static PyObject *__pyx_pw_4test_5FIB(PyObject *__pyx_self, PyObject *__pyx_args,
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("FIB", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 36, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("test.FIB", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.FIB", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_candles), (&PyList_Type), 1, "candles", 1))) __PYX_ERR(0, 36, __pyx_L1_error)
-  __pyx_r = __pyx_pf_4test_4FIB(__pyx_self, __pyx_v_candles, __pyx_v_period);
+  __pyx_r = __pyx_pf_14testindicators_4FIB(__pyx_self, __pyx_v_candles, __pyx_v_period);
 
   /* function exit code */
   goto __pyx_L0;
@@ -2947,13 +2947,13 @@ static PyObject *__pyx_pw_4test_5FIB(PyObject *__pyx_self, PyObject *__pyx_args,
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4test_4FIB(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_candles, int __pyx_v_period) {
+static PyObject *__pyx_pf_14testindicators_4FIB(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_candles, int __pyx_v_period) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("FIB", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_4test_FIB(__pyx_v_candles, __pyx_v_period, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_14testindicators_FIB(__pyx_v_candles, __pyx_v_period, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -2962,7 +2962,7 @@ static PyObject *__pyx_pf_4test_4FIB(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("test.FIB", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.FIB", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2970,7 +2970,7 @@ static PyObject *__pyx_pf_4test_4FIB(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
   return __pyx_r;
 }
 
-/* "indicators.pyx":53
+/* "testindicators.pyx":53
  * 
  * 
  * cpdef BOLINGER_BANDES(double[:] closes, int period):             # <<<<<<<<<<<<<<
@@ -2978,8 +2978,8 @@ static PyObject *__pyx_pf_4test_4FIB(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
  * #   * Upper Band = 20-day SMA + (20-day standard deviation of price x 2)
  */
 
-static PyObject *__pyx_pw_4test_7BOLINGER_BANDES(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_f_4test_BOLINGER_BANDES(__Pyx_memviewslice __pyx_v_closes, int __pyx_v_period, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static PyObject *__pyx_pw_14testindicators_7BOLINGER_BANDES(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_f_14testindicators_BOLINGER_BANDES(__Pyx_memviewslice __pyx_v_closes, int __pyx_v_period, CYTHON_UNUSED int __pyx_skip_dispatch) {
   float __pyx_v_sdv;
   float __pyx_v_sma;
   PyObject *__pyx_r = NULL;
@@ -2991,7 +2991,7 @@ static PyObject *__pyx_f_4test_BOLINGER_BANDES(__Pyx_memviewslice __pyx_v_closes
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("BOLINGER_BANDES", 0);
 
-  /* "indicators.pyx":57
+  /* "testindicators.pyx":57
  * #   * Upper Band = 20-day SMA + (20-day standard deviation of price x 2)
  * #   * Lower Band = 20-day SMA - (20-day standard deviation of price x 2)
  *         cdef float sdv = SDV(closes, period)             # <<<<<<<<<<<<<<
@@ -3000,27 +3000,27 @@ static PyObject *__pyx_f_4test_BOLINGER_BANDES(__Pyx_memviewslice __pyx_v_closes
  */
   __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_period); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __pyx_f_4test_SDV(__pyx_v_closes, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_14testindicators_SDV(__pyx_v_closes, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = __pyx_PyFloat_AsFloat(__pyx_t_2); if (unlikely((__pyx_t_3 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_sdv = __pyx_t_3;
 
-  /* "indicators.pyx":58
+  /* "testindicators.pyx":58
  * #   * Lower Band = 20-day SMA - (20-day standard deviation of price x 2)
  *         cdef float sdv = SDV(closes, period)
  *         cdef float sma = SMA(closes, period)             # <<<<<<<<<<<<<<
  *         return (sma), (sma + sdv*2), (sma - sdv*2)
  * 
  */
-  __pyx_t_2 = __pyx_f_4test_SMA(__pyx_v_closes, __pyx_v_period, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_14testindicators_SMA(__pyx_v_closes, __pyx_v_period, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = __pyx_PyFloat_AsFloat(__pyx_t_2); if (unlikely((__pyx_t_3 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_sma = __pyx_t_3;
 
-  /* "indicators.pyx":59
+  /* "testindicators.pyx":59
  *         cdef float sdv = SDV(closes, period)
  *         cdef float sma = SMA(closes, period)
  *         return (sma), (sma + sdv*2), (sma - sdv*2)             # <<<<<<<<<<<<<<
@@ -3049,7 +3049,7 @@ static PyObject *__pyx_f_4test_BOLINGER_BANDES(__Pyx_memviewslice __pyx_v_closes
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "indicators.pyx":53
+  /* "testindicators.pyx":53
  * 
  * 
  * cpdef BOLINGER_BANDES(double[:] closes, int period):             # <<<<<<<<<<<<<<
@@ -3063,7 +3063,7 @@ static PyObject *__pyx_f_4test_BOLINGER_BANDES(__Pyx_memviewslice __pyx_v_closes
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("test.BOLINGER_BANDES", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.BOLINGER_BANDES", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3072,8 +3072,8 @@ static PyObject *__pyx_f_4test_BOLINGER_BANDES(__Pyx_memviewslice __pyx_v_closes
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4test_7BOLINGER_BANDES(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_4test_7BOLINGER_BANDES(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_14testindicators_7BOLINGER_BANDES(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_14testindicators_7BOLINGER_BANDES(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_closes = { 0, 0, { 0 }, { 0 }, { 0 } };
   int __pyx_v_period;
   PyObject *__pyx_r = 0;
@@ -3121,25 +3121,25 @@ static PyObject *__pyx_pw_4test_7BOLINGER_BANDES(PyObject *__pyx_self, PyObject 
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("BOLINGER_BANDES", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 53, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("test.BOLINGER_BANDES", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.BOLINGER_BANDES", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4test_6BOLINGER_BANDES(__pyx_self, __pyx_v_closes, __pyx_v_period);
+  __pyx_r = __pyx_pf_14testindicators_6BOLINGER_BANDES(__pyx_self, __pyx_v_closes, __pyx_v_period);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4test_6BOLINGER_BANDES(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_closes, int __pyx_v_period) {
+static PyObject *__pyx_pf_14testindicators_6BOLINGER_BANDES(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_closes, int __pyx_v_period) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("BOLINGER_BANDES", 0);
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_v_closes.memview)) { __Pyx_RaiseUnboundLocalError("closes"); __PYX_ERR(0, 53, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_f_4test_BOLINGER_BANDES(__pyx_v_closes, __pyx_v_period, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_14testindicators_BOLINGER_BANDES(__pyx_v_closes, __pyx_v_period, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -3148,7 +3148,7 @@ static PyObject *__pyx_pf_4test_6BOLINGER_BANDES(CYTHON_UNUSED PyObject *__pyx_s
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("test.BOLINGER_BANDES", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.BOLINGER_BANDES", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_closes, 1);
@@ -3157,7 +3157,7 @@ static PyObject *__pyx_pf_4test_6BOLINGER_BANDES(CYTHON_UNUSED PyObject *__pyx_s
   return __pyx_r;
 }
 
-/* "indicators.pyx":62
+/* "testindicators.pyx":62
  * 
  * 
  * cpdef MOMENTUM(double [:] closes, int period):             # <<<<<<<<<<<<<<
@@ -3165,8 +3165,8 @@ static PyObject *__pyx_pf_4test_6BOLINGER_BANDES(CYTHON_UNUSED PyObject *__pyx_s
  *         return closes[length] - closes[length-period]
  */
 
-static PyObject *__pyx_pw_4test_9MOMENTUM(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_f_4test_MOMENTUM(__Pyx_memviewslice __pyx_v_closes, int __pyx_v_period, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static PyObject *__pyx_pw_14testindicators_9MOMENTUM(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_f_14testindicators_MOMENTUM(__Pyx_memviewslice __pyx_v_closes, int __pyx_v_period, CYTHON_UNUSED int __pyx_skip_dispatch) {
   PyObject *__pyx_v_length = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -3179,7 +3179,7 @@ static PyObject *__pyx_f_4test_MOMENTUM(__Pyx_memviewslice __pyx_v_closes, int _
   Py_ssize_t __pyx_t_7;
   __Pyx_RefNannySetupContext("MOMENTUM", 0);
 
-  /* "indicators.pyx":63
+  /* "testindicators.pyx":63
  * 
  * cpdef MOMENTUM(double [:] closes, int period):
  *         cdef length = closes.shape[0]             # <<<<<<<<<<<<<<
@@ -3191,7 +3191,7 @@ static PyObject *__pyx_f_4test_MOMENTUM(__Pyx_memviewslice __pyx_v_closes, int _
   __pyx_v_length = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "indicators.pyx":64
+  /* "testindicators.pyx":64
  * cpdef MOMENTUM(double [:] closes, int period):
  *         cdef length = closes.shape[0]
  *         return closes[length] - closes[length-period]             # <<<<<<<<<<<<<<
@@ -3233,7 +3233,7 @@ static PyObject *__pyx_f_4test_MOMENTUM(__Pyx_memviewslice __pyx_v_closes, int _
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "indicators.pyx":62
+  /* "testindicators.pyx":62
  * 
  * 
  * cpdef MOMENTUM(double [:] closes, int period):             # <<<<<<<<<<<<<<
@@ -3245,7 +3245,7 @@ static PyObject *__pyx_f_4test_MOMENTUM(__Pyx_memviewslice __pyx_v_closes, int _
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("test.MOMENTUM", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.MOMENTUM", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_length);
@@ -3255,8 +3255,8 @@ static PyObject *__pyx_f_4test_MOMENTUM(__Pyx_memviewslice __pyx_v_closes, int _
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4test_9MOMENTUM(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_4test_9MOMENTUM(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_14testindicators_9MOMENTUM(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_14testindicators_9MOMENTUM(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_closes = { 0, 0, { 0 }, { 0 }, { 0 } };
   int __pyx_v_period;
   PyObject *__pyx_r = 0;
@@ -3304,25 +3304,25 @@ static PyObject *__pyx_pw_4test_9MOMENTUM(PyObject *__pyx_self, PyObject *__pyx_
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("MOMENTUM", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 62, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("test.MOMENTUM", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.MOMENTUM", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4test_8MOMENTUM(__pyx_self, __pyx_v_closes, __pyx_v_period);
+  __pyx_r = __pyx_pf_14testindicators_8MOMENTUM(__pyx_self, __pyx_v_closes, __pyx_v_period);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4test_8MOMENTUM(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_closes, int __pyx_v_period) {
+static PyObject *__pyx_pf_14testindicators_8MOMENTUM(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_closes, int __pyx_v_period) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("MOMENTUM", 0);
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_v_closes.memview)) { __Pyx_RaiseUnboundLocalError("closes"); __PYX_ERR(0, 62, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_f_4test_MOMENTUM(__pyx_v_closes, __pyx_v_period, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_14testindicators_MOMENTUM(__pyx_v_closes, __pyx_v_period, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -3331,7 +3331,7 @@ static PyObject *__pyx_pf_4test_8MOMENTUM(CYTHON_UNUSED PyObject *__pyx_self, __
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("test.MOMENTUM", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("testindicators.MOMENTUM", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_closes, 1);
@@ -16285,7 +16285,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "test.array", /*tp_name*/
+  "testindicators.array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -16404,7 +16404,7 @@ static PyMethodDef __pyx_methods_Enum[] = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "test.Enum", /*tp_name*/
+  "testindicators.Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -16665,7 +16665,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "test.memoryview", /*tp_name*/
+  "testindicators.memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -16803,7 +16803,7 @@ static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "test._memoryviewslice", /*tp_name*/
+  "testindicators._memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -16879,28 +16879,28 @@ static PyTypeObject __pyx_type___pyx_memoryviewslice = {
 };
 
 static PyMethodDef __pyx_methods[] = {
-  {"SMA", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4test_1SMA, METH_VARARGS|METH_KEYWORDS, 0},
-  {"UPTREND", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4test_3UPTREND, METH_VARARGS|METH_KEYWORDS, 0},
-  {"FIB", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4test_5FIB, METH_VARARGS|METH_KEYWORDS, 0},
-  {"BOLINGER_BANDES", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4test_7BOLINGER_BANDES, METH_VARARGS|METH_KEYWORDS, 0},
-  {"MOMENTUM", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4test_9MOMENTUM, METH_VARARGS|METH_KEYWORDS, 0},
+  {"SMA", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_14testindicators_1SMA, METH_VARARGS|METH_KEYWORDS, 0},
+  {"UPTREND", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_14testindicators_3UPTREND, METH_VARARGS|METH_KEYWORDS, 0},
+  {"FIB", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_14testindicators_5FIB, METH_VARARGS|METH_KEYWORDS, 0},
+  {"BOLINGER_BANDES", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_14testindicators_7BOLINGER_BANDES, METH_VARARGS|METH_KEYWORDS, 0},
+  {"MOMENTUM", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_14testindicators_9MOMENTUM, METH_VARARGS|METH_KEYWORDS, 0},
   {0, 0, 0, 0}
 };
 
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_test(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_testindicators(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_test},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_testindicators},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "test",
+    "testindicators",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -17463,11 +17463,11 @@ static int __Pyx_modinit_function_import_code(void) {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC inittest(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC inittest(void)
+__Pyx_PyMODINIT_FUNC inittestindicators(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC inittestindicators(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_test(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_test(void)
+__Pyx_PyMODINIT_FUNC PyInit_testindicators(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_testindicators(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -17534,7 +17534,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_test(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_testindicators(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -17544,7 +17544,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_test(PyObject *__pyx_pyinit_module
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'test' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'testindicators' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -17559,7 +17559,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_test(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_testindicators(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -17598,7 +17598,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("test", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("testindicators", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -17616,14 +17616,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_test) {
+  if (__pyx_module_is_main_testindicators) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "test")) {
-      if (unlikely(PyDict_SetItemString(modules, "test", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "testindicators")) {
+      if (unlikely(PyDict_SetItemString(modules, "testindicators", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -17644,7 +17644,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "indicators.pyx":1
+  /* "testindicators.pyx":1
  * import numpy as np             # <<<<<<<<<<<<<<
  * 
  * cpdef SMA(double[:] closes, int period):
@@ -17654,7 +17654,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "indicators.pyx":62
+  /* "testindicators.pyx":62
  * 
  * 
  * cpdef MOMENTUM(double [:] closes, int period):             # <<<<<<<<<<<<<<
@@ -17826,11 +17826,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init test", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init testindicators", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init test");
+    PyErr_SetString(PyExc_ImportError, "init testindicators");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
