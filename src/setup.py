@@ -8,5 +8,5 @@ from setuptools import Extension
 setup(
 #    cmdclass = cmdclass,
     name = "test package",
-    ext_modules = [Extension('testindicators', ['testindicators.c'])]
+    ext_modules = [Extension('testindicators', ['testindicators.pyx'])]
 )
