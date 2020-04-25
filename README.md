@@ -1,5 +1,5 @@
 # Indicator Functions using cython (v0.0.1)
-@Author ```diff - epociask```
+@Author epociask
 
 Still in infancy will require a good amount of work
 
@@ -10,8 +10,8 @@ Currently only provide support for SMA, Upper Fibonnaci Retracement Levels, && B
 ## To Install (For Now)
 
 ### Add to python envrionment (PIP) 
-```
-``` diff - pip ``` ```diff + install cython-indicators ``` 
+```Linux Kernel Module
+install cython-indicators  
 ```
 
 ### Add to python envrionment (Manual)
