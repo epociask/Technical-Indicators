@@ -2,6 +2,7 @@
 from distutils.core import setup
 from Cython.Distutils import build_ext
 import setuptools
+import os 
 from setuptools import Extension
 thelibFolder = os.path.dirname(os.path.realpath(__file__))
 requirementPath = 'requirements.txt'
