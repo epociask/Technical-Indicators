@@ -10,7 +10,7 @@ Currently only provide support for SMA, Upper Fibonnaci Retracement Levels, && B
 ## To Install (For Now)
 
 ### Add to python envrionment (PIP) 
-```Linux Kernel Module
+```Bash
 install cython-indicators  
 ```
 
