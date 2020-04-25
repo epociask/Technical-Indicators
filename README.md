@@ -11,7 +11,7 @@ Currently only provide support for SMA, Upper Fibonnaci Retracement Levels, && B
 
 ### Add to python envrionment (PIP) 
 ```
-'''pip''' install cython-indicators 
+pip install cython-indicators 
 ```
 
 ### Add to python envrionment (Manual)
