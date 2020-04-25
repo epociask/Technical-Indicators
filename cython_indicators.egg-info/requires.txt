@@ -1,4 +1,0 @@
-distutils
-Cython
-setuptools
-numpy

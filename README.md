@@ -10,17 +10,17 @@ Currently only provide support for SMA, Upper Fibonnaci Retracement Levels, && B
 ## To Install (For Now)
 
 ### Add to python envrionment (PIP) 
-``` 
-pip install -i https://test.pypi.org/simple/ cython-indicators==0.0.1
+```
+pip install cython-indicators 
 ```
 
 ### Add to python envrionment (Manual)
 ``` 
 git clone https://github.com/epociask/cython_indicator_functions.git 
 
-python3 setup.py build 
+python setup.py build 
 
-python3 setup.py install --user 
+python setup.py install --user 
 ```
 
 
