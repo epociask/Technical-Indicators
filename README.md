@@ -15,7 +15,7 @@ pip install cython-indicators
 ```
 
 ### Add to python envrionment (Manual)
-``` python
+``` Shell
 git clone https://github.com/epociask/cython_indicator_functions.git 
 
 python setup.py build 
