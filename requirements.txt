@@ -1,3 +1,4 @@
 distutils
 Cython
 setuptools
+numpy
