@@ -1,11 +1,35 @@
-# Indicator Functions using cython (v0.0.1)
+# Indicator Functions using cython (v0.0.3)
 @Author epociask
 
-Still in infancy will require a good amount of work
+** Still in infancy, gonna require a good amount of work ** 
 
-Currently only provide support for SMA, Upper Fibonnaci Retracement Levels, && Bollinger Bands (Many to come and many to be ported over from original python)
+## Currently provide support for:
+* BB - Bolinger Bands 
+[https://www.investopedia.com/articles/technical/102201.asp]
 
-### Not currently supported on windows, should work with most mac & linux distributions 
+* FIB - Upper Fibonacci Retracement Levels 
+[https://www.investopedia.com/terms/f/fibonacciretracement.asp]
+
+* FIB_BB - Fibonacci Bolinger Bands
+[https://www.motivewave.com/studies/bollinger_bands_fib_ratios.htm]
+
+* SMA - Simple Moving Average
+[https://www.investopedia.com/terms/s/sma.asp]
+
+* WMA - Weighted Moving Average
+[https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/wma]
+
+* SDV - Standard Deviation 
+[https://www.mathsisfun.com/data/standard-deviation-formulas.html]
+
+
+## Currently Supported and Tested on
+
+* MACOSX
+* Kalinux_x86
+* Debian_x86
+* Fedora_x86
+* Raspbian_x64
 
 ## To Install (For Now)
 
