@@ -4,23 +4,17 @@
 ** Still in infancy, gonna require a good amount of work ** 
 
 ## Currently provide support for:
-* BB - [Bolinger Bands] 
-(https://www.investopedia.com/articles/technical/102201.asp)
+* BB - [Bolinger Bands](https://www.investopedia.com/articles/technical/102201.asp)
 
-* FIB - [Upper Fibonacci Retracement Levels]
-(https://www.investopedia.com/terms/f/fibonacciretracement.asp)
+* FIB - [Upper Fibonacci Retracement Levels](https://www.investopedia.com/terms/f/fibonacciretracement.asp)
 
-* FIB_BB - [Fibonacci Bolinger Bands]
-(https://www.motivewave.com/studies/bollinger_bands_fib_ratios.htm)
+* FIB_BB - [Fibonacci Bolinger Bands](https://www.motivewave.com/studies/bollinger_bands_fib_ratios.htm)
 
-* SMA - [Simple Moving Average]
-(https://www.investopedia.com/terms/s/sma.asp)
+* SMA - [Simple Moving Average](https://www.investopedia.com/terms/s/sma.asp)
 
-* WMA - [Weighted Moving Average]
-(https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/wma)
+* WMA - [Weighted Moving Average](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/wma)
 
-* SDV - [Standard Deviation] 
-(https://www.mathsisfun.com/data/standard-deviation-formulas.html)
+* SDV - [Standard Deviation](https://www.mathsisfun.com/data/standard-deviation-formulas.html)
 
 
 ## Currently Supported and Tested on
