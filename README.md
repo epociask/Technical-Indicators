@@ -5,7 +5,6 @@
 
 ## Currently provide support for:
 * BB - Bolinger Bands 
-
 [https://www.investopedia.com/articles/technical/102201.asp]
 
 * FIB - Upper Fibonacci Retracement Levels 
