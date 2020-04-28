@@ -14,7 +14,7 @@ cmdclass.update({'build_ext': build_ext})
 
 setuptools.setup(
     name="cython_indicators", 
-    version="0.0.2",
+    version="0.0.3",
     author="Ethen Pociask",
     author_email="epociask@volatrade.com",
     description="Indicator functions using cython",
