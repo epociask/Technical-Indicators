@@ -1,5 +1,3 @@
-# all .pyx files in a folder
-from distutils.core import setup
 from Cython.Distutils import build_ext
 import setuptools
 import os 
