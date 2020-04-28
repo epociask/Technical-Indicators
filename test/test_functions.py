@@ -28,6 +28,7 @@ class TestFunctions(unittest.TestCase):
 
     def testFIBONACCI(self): 
         expected = [51.728, 44.135999999999996, 31.863999999999997]
+        print("values ", values)
         a1, a2, a3 = testindicators.FIB(values, values.shape[0])
         self.assertListEqual(expected, [a1, a2, a3])
 

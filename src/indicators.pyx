@@ -1,5 +1,6 @@
 import numpy as np 
 from libc.math cimport sqrt
+
 cpdef float SMA(double[:] closes, int period):
         """
         Simple Moving Average function 
@@ -90,6 +91,18 @@ cpdef float WMA(double[:] closes, int period, float weightedFactor):
 
         return ma
 
+
+
+cpdef FIB_BANDS(double[:] closes, int bb_period):
+        cdef float ma 
+        cdef float upper 
+        cdef float lower 
+        cdef float upperOn
+        ma,  upper,  lower = BOLINGER_BANDS(closes, bb_period)
+        cdef float diff = upper - lower 
+        upperOne, upperTwo, upperThree = float(ma - (0.236 * diff)), float(ma - (0.382 * diff)), float(ma - (0.618 * diff))
+        lowerOne, lowerTwo, lowerThree  = float(ma+  (0.236 * diff)), float(ma + (0.382 * diff)), float(ma + (0.618 * diff))
+        return lower, lowerThree, lowerTwo, lowerOne, ma, upperOne , upperTwo, upperThree, upper 
 #TODO implement
 # cpdef float TMA(double[:] closes, int period):
 #         """
