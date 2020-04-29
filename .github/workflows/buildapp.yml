@@ -33,15 +33,8 @@ jobs:
               ${{ runner.os }}-
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Test with pytest
-        run: |
-          python3 src/setup.py build
-          python3 src/setup.py install
-          pip install pytest
-          pip install pytest-cov
-          pwd
-          pwd
-          pytest test/test_functions.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+      - name: Run unit tests
+        run: sh unit.sh
       - name: Lint with flake8
         run: |
           pip install flake8
