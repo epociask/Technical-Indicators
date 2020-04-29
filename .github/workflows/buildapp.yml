@@ -35,6 +35,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: Test with pytest
         run: |
+          ./unit.sh
           pip install pytest
           pip install pytest-cov
           pwd
