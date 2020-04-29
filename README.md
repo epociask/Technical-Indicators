@@ -17,6 +17,10 @@
 * SDV - [Standard Deviation](https://www.mathsisfun.com/data/standard-deviation-formulas.html)
 
 
+## Adding Support For 
+
+* FIB ARC - [Fibonacci Retracement Arc](https://www.investopedia.com/terms/f/fibonacciarc.asp)
+
 ## Currently Supported and Tested on
 
 * MACOSX
