@@ -1,4 +1,3 @@
-from Cython.Distutils import build_ext
 import setuptools
 import os 
 from setuptools import Extension
@@ -9,6 +8,9 @@ if os.path.isfile(requirementPath):
     with open(requirementPath) as f:
         install_requires = f.read().splitlines()
 cmdclass = {}
+
+from Cython.Distutils import build_ext
+
 ext_modules = [Extension("indicators", ["src/indicators.pyx"])]
 cmdclass.update({'build_ext': build_ext})
 

@@ -2,7 +2,7 @@ import unittest
 import testindicators 
 import numpy as np
 values = np.array([12.0, 14.0, 64.0, 32.0, 53.0])
-
+values1 = np.array([1.,2.,3.,4.,5.])
 float_format = lambda number: float("{:.2f}".format(number))
 
 class TestFunctions(unittest.TestCase):
@@ -37,3 +37,10 @@ class TestFunctions(unittest.TestCase):
         expected = 89.2
         actual = testindicators.WMA(np.array([90.0, 89.0, 88.0, 89.0]), 4, 10)
         self.assertEqual(expected, float_format(actual))
+
+
+    def testDERIVATIVE(self):
+        expected = 1
+        actual = testindicators.DERIVATIVE(values1, 2)
+        print(actual)
+        self.assertEqual(expected, actual)

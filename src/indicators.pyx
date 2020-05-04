@@ -92,6 +92,48 @@ cpdef float WMA(double[:] closes, int period, float weightedFactor):
         return ma
 
 
+cpdef DERIVATIVE(double[:] values, int period):
+        cdef int length = values.shape[0]
+        cdef int j = 0
+        cdef double[:] xvals = np.zeros((length-period,))
+        cdef double[:] yvals = np.zeros((length-period,))
+        for i in xrange(length - period, length):
+                xvals[j] = j
+                yvals[j] = SMA(values[0 : i], period)
+                j+=1
+        dx = np.diff(xvals)
+        dy = np.diff(yvals)
+
+        return (dy/dx)
+        
+cpdef EMA(double[:] values, float alpha = .3, int epsilon = 0):
+        if not 0 < alpha < 1:
+                raise ValueError("out of range, alpha='%s'" % alpha)
+
+        if not 0 <= epsilon < alpha:
+                raise ValueError("out of range, epsilon='%s'" % epsilon)
+
+        results = np.array([0] * len(values))  
+
+        for i, result in enumerate(results):
+
+                currentWeight = 1.0
+
+                numerator = 0
+                denominator = 0
+                for value in values[i::-1]:
+                        numerator += value * currentWeight
+                        denominator += currentWeight
+
+                        currentWeight *= alpha
+                        if currentWeight < epsilon:
+                                break
+
+                results[i] = numerator / denominator
+
+        return results
+
+
 
 cpdef FIB_BANDS(double[:] closes, int bb_period):
         cdef float ma 
