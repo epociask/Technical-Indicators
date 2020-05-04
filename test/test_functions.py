@@ -27,7 +27,7 @@ class TestFunctions(unittest.TestCase):
         self.assertEqual([float_format(a1), float_format(a2), float_format(a3)], [ 40.75, 85.21, -3.71])
 
     def testFIBONACCI(self): 
-        expected = [51.728, 44.135999999999996, 31.863999999999997]
+        expected = [51.72800064086914, 44.13600158691406, 31.86400032043457]
         print("values ", values)
         a1, a2, a3 = testindicators.FIB(values, values.shape[0])
         self.assertListEqual(expected, [a1, a2, a3])
@@ -43,4 +43,12 @@ class TestFunctions(unittest.TestCase):
         expected = 1
         actual = testindicators.DERIVATIVE(values1, 2)
         print(actual)
-        self.assertEqual(expected, actual)
+        self.assertEqual(expected, actual[0])
+
+    def testEMA(self):
+        vals = np.array([1.9, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0 ,8.0])
+        expected = np.array([1.0, 1.769230842590332, 2.6546761989593506, 3.604093313217163, 4.583608150482178, 5.575806140899658, 6.5729594230651855, 7.571954250335693])
+        actual = np.array(testindicators.EMA(vals, 7))
+        print("actual", actual) 
+        print("expected", expected  )
+        self.assertEqual(expected[-1], actual[-1]) 

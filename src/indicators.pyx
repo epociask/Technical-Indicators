@@ -1,5 +1,7 @@
 import numpy as np 
 from libc.math cimport sqrt
+from libc.stdlib cimport malloc, free
+from cpython cimport array
 
 cpdef float SMA(double[:] closes, int period):
         """
@@ -30,7 +32,7 @@ cpdef float SDV(double[:] closes, int period):
         return float(sqrt(x_i/(period-1)))
 
 #TODO add lower retracement 
-cpdef FIB(double[:] closes, int period):
+cpdef (float, float, float) FIB(double[:] closes, int period):
         """
         Fibonacci retracement equation; currently only support upper retracement
         @param closes: list of candle dictionaries in format {''} 
@@ -52,7 +54,7 @@ cpdef FIB(double[:] closes, int period):
 
 
 
-cpdef BOLINGER_BANDS(double[:] closes, int period):
+cpdef (float, float, float) BOLINGER_BANDS(double[:] closes, int period):
         """
         Bolinger Band calculations function 
         @param closes: list of closing candle prices 
@@ -92,7 +94,12 @@ cpdef float WMA(double[:] closes, int period, float weightedFactor):
         return ma
 
 
-cpdef DERIVATIVE(double[:] values, int period):
+cpdef DERIVATIVE(double[:] values, int period): #TODO additional testing 
+        """
+        Derivate function... interpolates a list of values, derives the list, and returns d/dx list 
+        @param values: to interpolate & derive
+        @param period: period to calculate for
+        """
         cdef int length = values.shape[0]
         cdef int j = 0
         cdef double[:] xvals = np.zeros((length-period,))
@@ -106,45 +113,69 @@ cpdef DERIVATIVE(double[:] values, int period):
 
         return (dy/dx)
         
-cpdef EMA(double[:] values, float alpha = .3, int epsilon = 0):
-        if not 0 < alpha < 1:
-                raise ValueError("out of range, alpha='%s'" % alpha)
+cpdef list EMA(double[:] closes, int period, float alpha = .3, int epsilon = 0):
+        """
+        Exponential moving average function 
+        @param closes: list of closing candle prices 
+        @param period: period to calculate for 
+        @param alpha: alpha value
+        @param epsilon: epsilon value 
+        """
 
-        if not 0 <= epsilon < alpha:
-                raise ValueError("out of range, epsilon='%s'" % epsilon)
+        assert(0 < alpha < 1, ("out of range, alpha='%s'" % alpha))
 
-        results = np.array([0] * len(values))  
+        assert(not 0 <= epsilon < alpha, ("out of range, epsilon='%s'" % epsilon))
 
-        for i, result in enumerate(results):
+        assert(period>0, ("out of range, period='%s'" %period))
 
+        cdef float currentWeight
+        cdef float numerator      
+        cdef float denominator 
+        cdef int i 
+        cdef int j 
+        cdef int k = 0
+        cdef int length = closes.shape[0]
+        cdef double *results = <double *> malloc(sizeof(double)* (period+1))
+
+        for i in xrange(length-period, length):
                 currentWeight = 1.0
-
-                numerator = 0
-                denominator = 0
-                for value in values[i::-1]:
-                        numerator += value * currentWeight
+                numerator = 0.0 
+                denominator = 0.0
+                for j in xrange(i, 0, -1):
+                        numerator += closes[j] * currentWeight
                         denominator += currentWeight
 
                         currentWeight *= alpha
                         if currentWeight < epsilon:
                                 break
+                results[k] = numerator / denominator
+                k+=1
+        try:
+                return [e for e in results[:period]]
 
-                results[i] = numerator / denominator
-
-        return results
-
+        finally:
+                free(results)
 
 
-cpdef FIB_BANDS(double[:] closes, int bb_period):
+
+cpdef (float, float, float, float, float, float, float, float, float) FIB_BANDS(double[:] closes, int period):
+        """
+        Fibonacci Bolinger Bands function ... does retracements between ma/upper-band & ma/lower-band 
+        @param closes: list of closing prices
+        @param period: period to calculate for 
+        """
+        assert(period>0, ("out of range period='%s'" %period))
         cdef float ma 
         cdef float upper 
         cdef float lower 
         cdef float upperOn
-        ma,  upper,  lower = BOLINGER_BANDS(closes, bb_period)
+        ma,  upper,  lower = BOLINGER_BANDS(closes, period)
         cdef float diff = upper - lower 
         upperOne, upperTwo, upperThree = float(ma - (0.236 * diff)), float(ma - (0.382 * diff)), float(ma - (0.618 * diff))
         lowerOne, lowerTwo, lowerThree  = float(ma+  (0.236 * diff)), float(ma + (0.382 * diff)), float(ma + (0.618 * diff))
         return lower, lowerThree, lowerTwo, lowerOne, ma, upperOne , upperTwo, upperThree, upper 
+
+
 #TODO implement
 # cpdef float TMA(double[:] closes, int period):
 #         """
