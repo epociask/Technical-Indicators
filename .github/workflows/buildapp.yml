@@ -33,6 +33,8 @@ jobs:
               ${{ runner.os }}-
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: install mock module
+        run: ./unit.sh
       - name: Run unit tests
         run: sh unit.sh
       - name: Lint with flake8
