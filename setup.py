@@ -1,6 +1,4 @@
-import setuptools
 import os 
-from setuptools import Extension
 thelibFolder = os.path.dirname(os.path.realpath(__file__))
 requirementPath = 'requirements.txt'
 install_requires = [] 
@@ -10,13 +8,14 @@ if os.path.isfile(requirementPath):
 cmdclass = {}
 
 from Cython.Distutils import build_ext
-
+import setuptools
+from setuptools import Extension
 ext_modules = [Extension("indicators", ["src/indicators.pyx"])]
 cmdclass.update({'build_ext': build_ext})
 
 setuptools.setup(
     name="cython_indicators", 
-    version="0.0.3",
+    version="0.0.4",
     author="Ethen Pociask",
     author_email="epociask@volatrade.com",
     description="Indicator functions using cython",
