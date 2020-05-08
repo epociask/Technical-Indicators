@@ -1,10 +1,11 @@
 import os 
+import subprocess
 thelibFolder = os.path.dirname(os.path.realpath(__file__))
 requirementPath = 'requirements.txt'
 install_requires = [] 
 if os.path.isfile(requirementPath):
     with open(requirementPath) as f:
-        install_requires = f.read().splitlines()
+        install_requires = subprocess.run(f"pip install {f.read().splitlines()}", shell=False)
 cmdclass = {}
 
 from Cython.Distutils import build_ext
@@ -15,7 +16,7 @@ cmdclass.update({'build_ext': build_ext})
 
 setuptools.setup(
     name="cython_indicators", 
-    version="0.0.5",
+    version="0.0.6",
     author="Ethen Pociask",
     author_email="epociask@volatrade.com",
     description="Indicator functions using cython",

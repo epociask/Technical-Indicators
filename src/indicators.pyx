@@ -54,7 +54,7 @@ cpdef (float, float, float) FIB(double[:] closes, int period):
 
 
 
-cpdef (float, float, float) BOLINGER_BANDS(double[:] closes, int period):
+cpdef (float, float, float) BOLINGER_BANDS(double[:] closes, int period, int numberOfSDV):
         """
         Bolinger Band calculations function 
         @param closes: list of closing candle prices 
@@ -62,7 +62,7 @@ cpdef (float, float, float) BOLINGER_BANDS(double[:] closes, int period):
         """
         cdef float sdv = SDV(closes, period)
         cdef float sma = SMA(closes, period)
-        return (sma), (sma + sdv*2), (sma - sdv*2)
+        return (sma), (sma + sdv * numberOfSDV), (sma - sdv * numberOfSDV)
 
 
 cpdef float MOMENTUM(double [:] closes, int period):
@@ -127,7 +127,6 @@ cpdef list EMA(double[:] closes, int period, float alpha = .3, int epsilon = 0):
         assert(not 0 <= epsilon < alpha, ("out of range, epsilon='%s'" % epsilon))
 
         assert(period>0, ("out of range, period='%s'" %period))
-
         cdef float currentWeight
         cdef float numerator      
         cdef float denominator 
@@ -174,6 +173,19 @@ cpdef (float, float, float, float, float, float, float, float, float) FIB_BANDS(
         upperOne, upperTwo, upperThree = float(ma - (0.236 * diff)), float(ma - (0.382 * diff)), float(ma - (0.618 * diff))
         lowerOne, lowerTwo, lowerThree  = float(ma+  (0.236 * diff)), float(ma + (0.382 * diff)), float(ma + (0.618 * diff))
         return lower, lowerThree, lowerTwo, lowerOne, ma, upperOne , upperTwo, upperThree, upper 
+
+
+
+# cpdef (float, float, float) MACD(double[:] closes, int period):
+#         """
+#         Moving Average Convergence Divergence............................................
+#         @param closes: list of closing prices
+#         @param period: period to calculate for
+
+#         """
+#         float ema_26 = EMA(closes, 26) 
+#         float ema_13 = EMA(closes, 13)
+#         float ema_5 = 
 
 
 #TODO implement

@@ -23,7 +23,7 @@ class TestFunctions(unittest.TestCase):
         self.assertAlmostEquals(expected, float_format(actual))
 
     def testBB(self): 
-        a1, a2, a3 = testindicators.BOLINGER_BANDS(values, 4)
+        a1, a2, a3 = testindicators.BOLINGER_BANDS(values, 4, 2)
         self.assertEqual([float_format(a1), float_format(a2), float_format(a3)], [ 40.75, 85.21, -3.71])
 
     def testFIBONACCI(self): 
