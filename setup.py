@@ -5,7 +5,10 @@ requirementPath = 'requirements.txt'
 install_requires = [] 
 if os.path.isfile(requirementPath):
     with open(requirementPath) as f:
-        install_requires = subprocess.run(f"pip install {f.read().splitlines()}", shell=False)
+        install_requires = f.read().splitlines()
+
+for i in install_requires:
+    subprocess.run(f"pip install {i}", shell=False)
 cmdclass = {}
 
 from Cython.Distutils import build_ext
