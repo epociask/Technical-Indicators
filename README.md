@@ -1,4 +1,4 @@
-# Indicator Functions using cython (v0.0.3)
+# Indicator Functions using cython (v0.0.6)
 @Author epociask
 
 ** Still in infancy, gonna require a good amount of work ** 
