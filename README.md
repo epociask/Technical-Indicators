@@ -6,8 +6,6 @@
 ## Currently provide support for:
 * BB - [Bolinger Bands](https://www.investopedia.com/articles/technical/102201.asp)
 
-* EMA -[Exponential Moving Average](https://www.investopedia.com/terms/e/ema.asp)
-
 * FIB - [Upper Fibonacci Retracement Levels](https://www.investopedia.com/terms/f/fibonacciretracement.asp)
 
 * FIB_BB - [Fibonacci Bolinger Bands](https://www.motivewave.com/studies/bollinger_bands_fib_ratios.htm)

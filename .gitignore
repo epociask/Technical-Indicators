@@ -3,4 +3,3 @@
 /src/build/*
 /src/dist/*
 /src/*.egg-info
-dist
