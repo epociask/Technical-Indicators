@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cff3084-800c-426f-8c49-d4204525e625" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib.macosx-10.9-x86_64-3.7/indicators.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib.macosx-10.9-x86_64-3.7/test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib.macosx-10.9-x86_64-3.7/test/test_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/temp.macosx-10.9-x86_64-3.7/src/indicators.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cython_indicators.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/cython_indicators.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cython_indicators.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cython_indicators.egg-info/SOURCES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cython_indicators.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cython_indicators.egg-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/cython_indicators-0.0.5-cp37-cp37m-macosx_10_9_x86_64.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/cython_indicators-0.0.5.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/indicators.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/indicators.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/indicators.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/src/indicators.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

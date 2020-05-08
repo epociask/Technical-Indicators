@@ -168,7 +168,7 @@ cpdef (float, float, float, float, float, float, float, float, float) FIB_BANDS(
         cdef float upper 
         cdef float lower 
         cdef float upperOn
-        ma,  upper,  lower = BOLINGER_BANDS(closes, period)
+        ma,  upper,  lower = BOLINGER_BANDS(closes, period, 2)
         cdef float diff = upper - lower 
         upperOne, upperTwo, upperThree = float(ma - (0.236 * diff)), float(ma - (0.382 * diff)), float(ma - (0.618 * diff))
         lowerOne, lowerTwo, lowerThree  = float(ma+  (0.236 * diff)), float(ma + (0.382 * diff)), float(ma + (0.618 * diff))
