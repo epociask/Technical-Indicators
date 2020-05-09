@@ -3,6 +3,24 @@ from libc.math cimport sqrt
 from libc.stdlib cimport malloc, free
 from cpython cimport array
 
+
+cpdef float TRUERANGE(dict candle1, dict candle2):
+        return abs(candle2['high'] - candle1['low'])
+
+
+cpdef float ATR(list candles, int period):
+        cdef int size = len(candles)
+        cdef float sum_vals = 0.0 
+        cdef int i 
+        for i in xrange(size-period+1, size):
+                sum_vals += TRUERANGE(candles[i-1], candles[i])
+
+        return sum_vals/period
+
+
+cpdef float SMOOTHED_ATR(list candles, int period):
+        return ATR(candles, period-1) + (TRUERANGE(candles[2], candles[-1]) / period)
+
 cpdef float SMA(double[:] closes, int period):
         """
         Simple Moving Average function 
@@ -127,6 +145,7 @@ cpdef list EMA(double[:] closes, int period, float alpha = .3, int epsilon = 0):
         assert(not 0 <= epsilon < alpha, ("out of range, epsilon='%s'" % epsilon))
 
         assert(period>0, ("out of range, period='%s'" %period))
+
         cdef float currentWeight
         cdef float numerator      
         cdef float denominator 
@@ -155,6 +174,23 @@ cpdef list EMA(double[:] closes, int period, float alpha = .3, int epsilon = 0):
         finally:
                 free(results)
 
+# cpdef float EMA2(double[:] closes, int period):
+#         cdef float multiplier
+#         cdef int length = closes.shape[0]
+#         multiplier = (2 /(period + 1))
+#         ema = []
+#         sma = SMA(closes, period)
+#         cdef int j = 1 
+#         ema.append(first_ema)
+#         ema.append(( (s[period] - sma) * multiplier) + sma)
+
+#         #now calculate the rest of the values
+#         for i in s[period+1:]:
+#                 tmp = ( (i - ema[j]) * multiplier) + ema[j]
+#                 j = j + 1
+#                 ema.append(tmp)
+
+#         return ema
 
 
 cpdef (float, float, float, float, float, float, float, float, float) FIB_BANDS(double[:] closes, int period):
@@ -176,17 +212,35 @@ cpdef (float, float, float, float, float, float, float, float, float) FIB_BANDS(
 
 
 
-# cpdef (float, float, float) MACD(double[:] closes, int period):
-#         """
-#         Moving Average Convergence Divergence............................................
-#         @param closes: list of closing prices
-#         @param period: period to calculate for
+cpdef (float, float) MACD(double[:] closes, int short_period, int long_period, int fast_period):
+        """
+        Moving Average Convergence Divergence............................................
+        @param closes: list of closing prices
+        @param period: period to calculate for
+        @returns macd line, trend line tuple 
+        """
 
-#         """
-#         float ema_26 = EMA(closes, 26) 
-#         float ema_13 = EMA(closes, 13)
-#         float ema_5 = 
-
+        cdef list ema_short
+        cdef list ema_long
+        cdef list trend_line 
+        macd_line = []
+        assert((long_period > short_period > fast_period) , (f"Out of range period value provided {short_period}, {long_period}, {fast_period}"))
+       
+        ema_long = EMA(closes, long_period) 
+        ema_short = EMA(closes, short_period)
+        ema_long = ema_long[long_period-short_period : long_period]
+        cdef int length = len(ema_short)
+        cdef int i 
+        print(ema_short)
+        print(ema_long)
+        for i in xrange(0, length):
+                print(i)
+                macd_line[i] = ema_short[i] - ema_long[i]
+        trend_line = EMA(macd_line, fast_period)
+        
+        print(trend_line[-1])
+        print(macd_line[-1])
+        return macd_line[-1], trend_line[-1]
 
 #TODO implement
 # cpdef float TMA(double[:] closes, int period):

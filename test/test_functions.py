@@ -52,3 +52,7 @@ class TestFunctions(unittest.TestCase):
         print("actual", actual) 
         print("expected", expected  )
         self.assertEqual(expected[-1], actual[-1]) 
+
+
+    def testMACD(self):
+        vals = np.array([1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6])
