@@ -4,22 +4,7 @@ from libc.stdlib cimport malloc, free
 from cpython cimport array
 
 
-cpdef float TRUERANGE(dict candle1, dict candle2):
-        return abs(candle2['high'] - candle1['low'])
 
-
-cpdef float ATR(list candles, int period):
-        cdef int size = len(candles)
-        cdef float sum_vals = 0.0 
-        cdef int i 
-        for i in xrange(size-period+1, size):
-                sum_vals += TRUERANGE(candles[i-1], candles[i])
-
-        return sum_vals/period
-
-
-cpdef float SMOOTHED_ATR(list candles, int period):
-        return ATR(candles, period-1) + (TRUERANGE(candles[2], candles[-1]) / period)
 
 cpdef float SMA(double[:] closes, int period):
         """
