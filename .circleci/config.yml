@@ -1,0 +1,66 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@0.2.1
+
+
+jobs:
+  build:
+    executor: python/default
+    docker:
+      - image: circleci/python:3.7.3
+    steps:
+      - checkout
+      - python/load-cache
+      - python/install-deps
+      - python/save-cache
+      - run:
+          name: "Running unit tests"
+          command: "cd src/ && python -m pytest tests/Test*.py"
+
+
+  deploy:
+    docker:
+      - image: circleci/python:3.7.3
+    steps:
+      - checkout
+      - python/load-cache
+      - python/install-deps
+      - python/save-cache
+      - run:
+          name: Verify git tag vs version
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            python setup.py verify
+      - run:
+          name: Initialize .pypirc
+          command: |
+            echo -e "[pypi]" >> ~/.pypirc
+            echo -e "username = epociask" >> ~/.pypirc
+            echo -e "password = $PYPI_PASSWORD" >> ~/.pypirc
+
+      - run:
+          name: Create Packages
+          command: |
+            make package
+
+      - run:
+          name: Upload to pypi
+          command: |
+            . venv/bin/activate
+            twine upload dist/*
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            tags:
+              only: /[0-9]+(\.[0-9]+)*/
+            branches:
+              ignore: /.*/

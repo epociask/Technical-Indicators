@@ -1,10 +1,12 @@
-# Indicator Functions using cython (v0.0.3)
+# Indicator Functions using cython (v0.0.6)
 @Author epociask
 
 ** Still in infancy, gonna require a good amount of work ** 
 
 ## Currently provide support for:
 * BB - [Bolinger Bands](https://www.investopedia.com/articles/technical/102201.asp)
+
+* EMA -[Exponential Moving Average](https://www.investopedia.com/terms/e/ema.asp)
 
 * FIB - [Upper Fibonacci Retracement Levels](https://www.investopedia.com/terms/f/fibonacciretracement.asp)
 

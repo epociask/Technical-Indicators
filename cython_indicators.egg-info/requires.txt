@@ -1,3 +1,2 @@
-Cython
-setuptools
+Cython==0.29.17
 numpy

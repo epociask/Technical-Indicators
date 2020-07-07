@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4cff3084-800c-426f-8c49-d4204525e625" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.macosx-10.7-x86_64-3.7/indicators.cpython-37m-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.macosx-10.7-x86_64-3.7/src/indicators.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/buildapp.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/pythonpublish.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cython_indicator_functions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cython_indicator_functions.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/50fb483f51c01e3e9cb7663fcf1801a9379fbb43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e11d8b1cacd08eafbd3b6221f30cd5635e1e52e2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e11d8b1cacd08eafbd3b6221f30cd5635e1e52e2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib.macosx-10.9-x86_64-3.7/indicators.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib.macosx-10.9-x86_64-3.7/test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib.macosx-10.9-x86_64-3.7/test/test_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/temp.macosx-10.9-x86_64-3.7/src/indicators.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cython_indicators.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/cython_indicators.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cython_indicators.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cython_indicators.egg-info/SOURCES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cython_indicators.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cython_indicators.egg-info/requires.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cython_indicators.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cython_indicators.egg-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/cython_indicators-0.0.3-cp37-cp37m-macosx_10_9_x86_64.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/cython_indicators-0.0.3.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/indicators.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/indicators.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/indicators.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/src/indicators.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testing.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_functions.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bPsVqMO3TN4qK07d64Lo1YUdRN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="test" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Makefile.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cff3084-800c-426f-8c49-d4204525e625" name="Default Changelist" comment="" />
+      <created>1588545089497</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588545089497</updated>
+      <workItem from="1588545094429" duration="183000" />
+      <workItem from="1594096977806" duration="4883000" />
+      <workItem from="1594104244989" duration="1580000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1878" height="253" key="GridCell.Tab.0.bottom" timestamp="1594104438499">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state width="1878" height="253" key="GridCell.Tab.0.bottom/0.23.1920.1001/-1680.97.1680.1027@0.23.1920.1001" timestamp="1594104438499" />
+    <state width="1878" height="253" key="GridCell.Tab.0.center" timestamp="1594104438498">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state width="1878" height="253" key="GridCell.Tab.0.center/0.23.1920.1001/-1680.97.1680.1027@0.23.1920.1001" timestamp="1594104438498" />
+    <state width="1878" height="253" key="GridCell.Tab.0.left" timestamp="1594104438497">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state width="1878" height="253" key="GridCell.Tab.0.left/0.23.1920.1001/-1680.97.1680.1027@0.23.1920.1001" timestamp="1594104438497" />
+    <state width="1878" height="253" key="GridCell.Tab.0.right" timestamp="1594104438498">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state width="1878" height="253" key="GridCell.Tab.0.right/0.23.1920.1001/-1680.97.1680.1027@0.23.1920.1001" timestamp="1594104438498" />
+    <state x="469" y="162" key="SettingsEditor" timestamp="1594100218116">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state x="469" y="162" key="SettingsEditor/0.23.1920.1001/-1680.97.1680.1027@0.23.1920.1001" timestamp="1594100218116" />
+    <state x="624" y="356" key="com.intellij.ide.util.TipDialog" timestamp="1594104245862">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state x="624" y="356" key="com.intellij.ide.util.TipDialog/0.23.1920.1001/-1680.97.1680.1027@0.23.1920.1001" timestamp="1594104245862" />
+    <state x="690" y="437" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1594104656266">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state x="690" y="437" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1920.1001/-1680.97.1680.1027@0.23.1920.1001" timestamp="1594104656266" />
+  </component>
+</project>
